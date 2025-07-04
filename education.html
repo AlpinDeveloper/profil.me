@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Education - Muhammad Alfin Candra</title>
+  </head>
+  <body>
+    <header>
+      <a href="#" class="logo">Muhammad Alfin Candra</a>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="skills.html">Skills</a>
+        <a href="education.html" class="active">Education</a>
+        <a href="experience.html">Experience</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
+
+    <section class="education">
+      <h1>My Education</h1>
+      <div class="edu-item">
+        <h2>SMK Ma’arif 2 Penawaja - Akuntansi</h2>
+        <span class="edu-year">Graduated 2023</span>
+        <p>
+          Studied accounting principles, financial reporting, and business administration basics to support modern financial operations.
+        </p>
+      </div>
+    </section>
+
+    <style>
+      body {
+        background-color: #191919;
+        color: white;
+        font-family: "Poppins", sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+      header {
+        padding: 1rem 9%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      nav {
+        display: flex;
+        gap: 2rem;
+      }
+      nav a {
+        color: white;
+        font-size: 1.8rem;
+        text-decoration: none;
+        border-bottom: 3px solid transparent;
+        transition: 0.3s ease;
+      }
+      nav a.active {
+        color: #e3651d;
+        border-bottom: 3px solid #e3651d;
+      }
+      .education {
+        padding: 10rem 9% 5rem;
+      }
+      .education h1 {
+        text-align: center;
+        font-size: 4rem;
+        margin-bottom: 4rem;
+      }
+      .edu-item {
+        margin-bottom: 3rem;
+        background: #222;
+        padding: 2rem;
+        border-radius: 1rem;
+      }
+      .edu-item h2 {
+        font-size: 2rem;
+        color: #e3651d;
+      }
+      .edu-year {
+        font-size: 1.4rem;
+        color: #aaa;
+      }
+      .edu-item p {
+        font-size: 1.6rem;
+        margin-top: 1rem;
+        color: #ddd;
+      }
+    </style>
+
+    <script>
+      const mobileMenu = document.getElementById("mobile-menu");
+      const nav = document.querySelector("nav");
+      if(mobileMenu){
+        mobileMenu.addEventListener("click", () => {
+          nav.classList.toggle("active");
+        });
+      }
+    </script>
+  </body>
+</html>
